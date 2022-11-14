@@ -1,0 +1,19 @@
+﻿  main.cpp
+C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(28,57): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(28,50): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(39,43): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(46,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(47,27): warning C4018: '<': signed/unsigned mismatch
+  SudokuSolver.vcxproj -> C:\Users\Pajunk\source\repos\SudokuSolver\Debug\SudokuSolver.exe
