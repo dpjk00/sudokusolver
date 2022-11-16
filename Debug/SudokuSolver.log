@@ -1,19 +1,31 @@
 ﻿  main.cpp
-C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(28,57): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(42,57): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(28,50): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(42,50): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(39,43): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(49,85): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(46,23): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(47,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(49,54): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(58,43): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(66,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(67,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(86,31): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(87,35): warning C4018: '<': signed/unsigned mismatch
   SudokuSolver.vcxproj -> C:\Users\Pajunk\source\repos\SudokuSolver\Debug\SudokuSolver.exe

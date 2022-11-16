@@ -1,0 +1,26 @@
+﻿  Cell.cpp
+  main.cpp
+C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(32,57): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(32,50): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(47,43): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(55,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(56,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(72,31): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Pajunk\source\repos\SudokuSolver\SudokuSolver\main.cpp(73,35): warning C4018: '<': signed/unsigned mismatch
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 223 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  SudokuSolver.vcxproj -> C:\Users\Pajunk\source\repos\SudokuSolver\Release\SudokuSolver.exe
