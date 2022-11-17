@@ -8,13 +8,10 @@
 #include <thread>
 
 const int windowWidth = 1000;
-const int windowHeight = 1100;
-
-const int bottomDivHeight = 100;
-sf::RectangleShape bottomDiv;
+const int windowHeight = 1000;
 
 const int cellWidth = windowWidth / 9;
-const int cellHeight = (windowHeight - bottomDivHeight) / 9;
+const int cellHeight = windowHeight / 9;
 
 sf::RenderWindow window(sf::VideoMode(windowWidth, windowHeight), "Sudoku Solver Visualization");
 
@@ -24,6 +21,18 @@ sf::Font font;
 // these two are used to select cell
 std::pair<int, int> selectedCellCoords;
 std::pair<int, int> prevSelectedCellCoords;
+
+sf::Vertex line[] =
+{
+    sf::Vertex(sf::Vector2f(windowWidth / 3, 0)),
+    sf::Vertex(sf::Vector2f(windowWidth / 3, windowHeight)),
+    sf::Vertex(sf::Vector2f((windowWidth / 3) * 2, 0)),
+    sf::Vertex(sf::Vector2f((windowWidth / 3) * 2, windowHeight)),
+    sf::Vertex(sf::Vector2f(0, windowWidth / 3)),
+    sf::Vertex(sf::Vector2f(windowWidth, windowWidth / 3)),
+    sf::Vertex(sf::Vector2f(0, (windowWidth / 3) * 2)),
+    sf::Vertex(sf::Vector2f(windowWidth, (windowWidth / 3) * 2)),
+};
 
 // create sudoku grid 9x9
 std::vector<std::vector<Cell>> grid;
@@ -42,7 +51,7 @@ void init() {
             cell.square.setPosition(sf::Vector2f(width, height));
             cell.square.setFillColor(sf::Color(30, 30, 30));
             cell.square.setOutlineColor(sf::Color(80, 80, 80));
-            cell.square.setOutlineThickness(-1);
+            cell.square.setOutlineThickness(-0.5);
             cell.setFont(font);
             cell.text.setFillColor(sf::Color::White);
             cell.text.setCharacterSize(60);
@@ -54,11 +63,6 @@ void init() {
         height += cellHeight;
         width = 0;
     }
-    bottomDiv.setSize(sf::Vector2f(windowWidth, bottomDivHeight));
-    bottomDiv.setPosition(sf::Vector2f(0, height));
-    bottomDiv.setFillColor(sf::Color(30, 30, 30));
-
-    // use two variables to position number in every cell, make it string if needed
 }
 
 // renders grid
@@ -67,9 +71,9 @@ void draw() {
         for (int j = 0; j < grid[i].size(); j++) {
             window.draw(grid[i][j].square);
             window.draw(grid[i][j].text);
+            window.draw(line, 8, sf::Lines);
         }
     }
-    window.draw(bottomDiv);
 }
 
 bool canPlace(int row, int col, int num);
